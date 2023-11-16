@@ -1,0 +1,4 @@
+npm install -g  @vue/cli-service
+npx browserslist@latest --update-db
+set NODE_OPTIONS=--openssl-legacy-provider
+$env:NODE_OPTIONS = "--openssl-legacy-provider"
