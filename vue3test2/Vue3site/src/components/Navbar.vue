@@ -22,6 +22,10 @@
           <p class="int_string">
             <input type="text" class = "stl_string" placeholder=" Логин/эл.почта">
             <input type="text" class = "stl_string" placeholder=" Пароль" style="margin-top: 10px;">
+            <div class="pos-but">
+              <classic-buttom class = "close_reg" @click="$router.push('/registration')">регестрация</classic-buttom>
+              <classic-buttom class = "close_log" @click="$router.push('/myprofile')">Вход</classic-buttom>
+            </div>
           </p>
         </div>
       </div>
@@ -29,17 +33,26 @@
 </template>
 <script>
 import MyButtonBar from './UI/MyButtonBar.vue';
+import ClassicButtom from './UI/ClassicButon.vue';
 
 export default {
-    components: { MyButtonBar },
+    components: { MyButtonBar , ClassicButtom  },
     mounted() {
       var modal = document.getElementById("modal1");
       var btn = document.getElementById("btn_acc");
       var span = document.getElementsByClassName("close_m")[0];
+      var closelog = document.getElementsByClassName("close_log")[0];
+      var closereg = document.getElementsByClassName("close_reg")[0];
       btn.onclick = function() {
         modal.style.display = "block";
       }
       span.onclick = function() {
+        modal.style.display = "none";
+      }
+      closelog.onclick = function() {
+        modal.style.display = "none";
+      }
+      closereg.onclick = function() {
         modal.style.display = "none";
       }
       // window.onclick = function(event) {
@@ -118,10 +131,11 @@ export default {
   margin-right: 5%;
 }
 
-.int_string {
-
+.pos-but{
+  margin-top: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
-
 .stl_string {
 width: 100%;
 height: 15px;
@@ -130,9 +144,9 @@ border: 2px solid rgb(70, 70, 70);
 border-radius: 5px;
 }
 .search {
-position:relative;
-margin-left: auto;
-margin-right: auto;
+margin-left: 10px;
+margin-right: 10px;
+width: 20%;
 background-color: rgb(35, 35, 35);
 border: 2px solid rgb(70, 70, 70);
 border-radius: 5px;

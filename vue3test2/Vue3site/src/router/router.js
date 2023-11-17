@@ -8,7 +8,8 @@ import PostPageCompositionApi from "@/pages/PostPageCompositionApi";
 import Catalog from "@/pages/Catalog";
 import News from "@/pages/News";
 import Discus from "@/pages/Discussions";
-import Profile from "@/pages/Profile";
+import MyProfile from "@/pages/MyProfile";
+import Registration from "@/pages/Registration";
 
 
 const routes = [
@@ -52,7 +53,11 @@ const routes = [
     },
     {
         path: '/myprofile',
-        component:Profile
+        component:MyProfile
+    },
+    {
+        path: '/registration',
+        component:Registration
     },
     
 
