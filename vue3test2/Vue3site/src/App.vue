@@ -21,6 +21,8 @@ export default {
   padding: 0;
   background: rgb(35, 35, 35);
   color: rgb(240, 240, 240);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
 }
 .app {
   background: rgb(35, 35, 35);

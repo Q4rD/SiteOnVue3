@@ -15,8 +15,16 @@
       <my-button-bar @click="$router.push('/discussions')">обсуждения</my-button-bar>
       <my-button-bar @click="$router.push('/about')">О нас</my-button-bar>
     </div>
-      <p class="account"><img src="./images/sd.gif" height="40"></p>
-      <div id = "modal1" class="login_modal"></div>
+      <p id = "btn_acc" class="account"><img src="./images/sd.gif" height="40"></p>
+      <div id = "modal1" class="login_modal" style="display: none;">
+        <span class="close_m">&times;</span>
+        <div class="inputs">
+          <p class="int_string">
+            <input type="text" class = "stl_string" placeholder=" Логин/эл.почта">
+            <input type="text" class = "stl_string" placeholder=" Пароль" style="margin-top: 10px;">
+          </p>
+        </div>
+      </div>
   </div>
 </template>
 <script>
@@ -24,6 +32,22 @@ import MyButtonBar from './UI/MyButtonBar.vue';
 
 export default {
     components: { MyButtonBar },
+    mounted() {
+      var modal = document.getElementById("modal1");
+      var btn = document.getElementById("btn_acc");
+      var span = document.getElementsByClassName("close_m")[0];
+      btn.onclick = function() {
+        modal.style.display = "block";
+      }
+      span.onclick = function() {
+        modal.style.display = "none";
+      }
+      // window.onclick = function(event) {
+      //   if (event.target == modal) {
+      //     modal.style.display = "none";
+      //   }
+      // }
+    }
 }
 </script>
 
@@ -63,18 +87,47 @@ export default {
   margin-right: auto;
 }
 .login_modal {
-  display: block;
   position: -webkit-sticky;
   position:absolute;
   height: 150px;
   width: 300px;
   top: 70px;
-  left: 67%;
+  margin-left: 73.5%;
   z-index: 1050;
   background-color: rgb(50, 50, 50);
   border: 2px solid rgb(70, 70, 70);
   border-radius: 5px;
-  /* box-shadow: 0 0 5px black; */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.700);
+}
+.close_m {
+  color: rgb(100, 100, 100);
+  float: right;
+  margin-right: 5px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.close_m:hover {
+  color: rgb(200, 200, 200);
+  cursor: pointer;
+}
+
+.inputs {
+  margin-top: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.int_string {
+
+}
+
+.stl_string {
+width: 100%;
+height: 15px;
+background-color: rgb(35, 35, 35);
+border: 2px solid rgb(70, 70, 70);
+border-radius: 5px;
 }
 .search {
 position:relative;
