@@ -1,1 +1,1 @@
-<p align = "center"><a href = "https://media.tenor.com/cX92mi1p-NYAAAAd/coding-anime.gif"></a></p>
+<p align = "center"><img src = "https://media.tenor.com/cX92mi1p-NYAAAAd/coding-anime.gif"></p>
