@@ -79,7 +79,7 @@ export default {
   width: auto;
 }
 .account {
-  display: flex;
+display: flex;
  margin-right: auto;
  border: 2px solid rgb(121, 33, 33);
  cursor: pointer;
@@ -105,7 +105,7 @@ export default {
   height: 150px;
   width: 300px;
   top: 70px;
-  margin-left: 73.5%;
+  margin-left: 70.5%;
   z-index: 1050;
   background-color: rgb(50, 50, 50);
   border: 2px solid rgb(70, 70, 70);

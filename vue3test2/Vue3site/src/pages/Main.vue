@@ -1,5 +1,7 @@
 <template>
-  <p class="main_news">Лента новостей</p>
+  <div class="main_news">Лента новостей 
+    <p id = "tb" class="test-block">asdasdsad</p>
+  </div>
   <div>
     <div class="blocks">
       <p class="block1">каталог вышедших манг</p>
@@ -11,7 +13,9 @@
 <script>
 
 export default {
-
+  mounted() {
+    
+  }
 }
 </script>
 
@@ -27,6 +31,15 @@ export default {
     border-radius: 5px;
   }
 
+  .test-block{
+    position:relative;
+    height: 160px;
+    width: 100px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: rgb(40, 40, 40);
+    border: 2px solid rgb(70, 70, 70);
+  }
   .blocks {
     margin-top: 20px;
     margin-left: 20px;
