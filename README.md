@@ -1,1 +1,1 @@
-![](https://pa1.aminoapps.com/7426/34187b5db71d923bef9240d6a385292a7a16d362r1-300-300_00.gif)
+<p align = "center"><img src = "https://media.tenor.com/uYP_Nkq8VPsAAAAd/coding-hello-world.gif"></p>
