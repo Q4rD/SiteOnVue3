@@ -10,7 +10,7 @@
   </div>
     <div class="navbar__btns">
       <my-button-bar @click="$router.push('/')">главная</my-button-bar>
-      <my-button-bar @click="$router.push('/catalog')">католог</my-button-bar>
+      <my-button-bar @click="$router.push('/catalog')">каталог</my-button-bar>
       <my-button-bar @click="$router.push('/news')">новости</my-button-bar>
       <my-button-bar @click="$router.push('/discussions')">обсуждения</my-button-bar>
       <my-button-bar @click="$router.push('/about')">О нас</my-button-bar>
