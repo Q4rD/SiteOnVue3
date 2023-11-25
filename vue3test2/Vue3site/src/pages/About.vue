@@ -6,7 +6,7 @@
       </p>
       <p class="btn_block">
         <ClassicButon class="btn" id="info">о сайте</ClassicButon>
-        <ClassicButon class="btn" id="catalog">католог</ClassicButon>
+        <ClassicButon class="btn" id="catalog">каталог</ClassicButon>
         <ClassicButon class="btn" id="discussions">обсуждения</ClassicButon>
         <ClassicButon class="btn" id="contact">связь с нами</ClassicButon>
       </p>
