@@ -15,7 +15,7 @@
       <my-button-bar @click="$router.push('/discussions')">обсуждения</my-button-bar>
       <my-button-bar @click="$router.push('/about')">О нас</my-button-bar>
     </div>
-      <p id = "btn_acc" class="account"><img src="./images/sd.gif" height="40"></p>
+      <p id = "btn_acc" class="account"><img src="./images/acountico.png" height="40"></p>
       <div id = "modal1" class="login_modal" style="display: none;">
         <span class="close_m">&times;</span>
         <div class="inputs">
@@ -31,6 +31,7 @@
       </div>
   </div>
 </template>
+
 <script>
 import MyButtonBar from './UI/MyButtonBar.vue';
 import ClassicButtom from './UI/ClassicButon.vue';
@@ -55,11 +56,6 @@ export default {
       closereg.onclick = function() {
         modal.style.display = "none";
       }
-      // window.onclick = function(event) {
-      //   if (event.target == modal) {
-      //     modal.style.display = "none";
-      //   }
-      // }
     }
 }
 </script>
